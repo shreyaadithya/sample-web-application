@@ -1,2 +1,5 @@
 [test]
-Host_ip
+98.88.24.194 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/.ssh/id_ed25519
+
+[test:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
